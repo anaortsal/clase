@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+ 
+*{
+	margin: 0;
+	padding: 0;
+ }
+ /*Selector de etiqueta*/
+ h1{
+	font-family: 'Roboto', sans-serif ;
+ }
+ /*Selector por id*/
+ #word_one{
+	font-size: 30px;
+	color: blue;
+	font-weight: 800;
+	text-transform: uppercase;
+
+ }
+ #list_options{
+	border: 1px solid red;
+	margin: 10px;
+	border-radius: 10px;
+ }
+ /* Selector por clase */
+.word_group{
+	background-color: blueviolet;
+	color: #fff;
+	margin: 10px;
+
+}
+/* Selector por atributo [] */
+[disabled]{
+	background-color: aqua;
+}
+/* Pseudoclase */
+#word_group:hover{
+	background-color: yellow;
+	padding: 5px;
+}
+
+

@@ -1,41 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
- 
-*{
+
+* {
 	margin: 0;
 	padding: 0;
- }
- /*Selector de etiqueta*/
- h1{
-	font-family: 'Roboto', sans-serif ;
- }
- /*Selector por id*/
- #word_one{
+}
+
+/*Selector de etiqueta*/
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Selector por id*/
+#word_one {
 	font-size: 30px;
 	color: blue;
 	font-weight: 800;
 	text-transform: uppercase;
 
- }
- #list_options{
-	border: 1px solid red;
+}
+
+#list_options {
+	border: 5px solid red;
 	margin: 10px;
 	border-radius: 10px;
- }
- /* Selector por clase */
-.word_group{
+}
+
+/* Selector por clase */
+.word_group {
 	background-color: blueviolet;
 	color: #fff;
 	margin: 10px;
 
 }
+
 /* Selector por atributo [] */
-[disabled]{
+[disabled] {
 	background-color: aqua;
 }
+
 /* Pseudoclase */
-#word_group:hover{
-	background-color: yellow;
+.word_group:hover {
+	background-color: aquamarine;
 	padding: 5px;
 }
 
+#title_box {
+	color: blue;
+	font-family: 'Times New Roman', Times, serif;
+	background-color: aqua;
+	margin: 10px 5px;
+	text-align: right;
+	text-transform: lowercase;
+	word-spacing: 25px;
+	letter-spacing: 10px;
+	padding: 20px;
+	border: 5px double #000;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 1px #0000ff;
+	-webkit-box-shadow: 11px 8px 75px 52px rgba(235, 33, 235, 1);
+	-moz-box-shadow: 11px 8px 75px 52px rgba(235, 33, 235, 1);
+	box-shadow: 11px 8px 75px 52px rgba(235, 33, 235, 1);
+	font-size: 30px;
 
+}
+#box_father{
+	background-color: #000;
+	width: 50%;
+	height: 200px;
+	background-image: url(https://media.istockphoto.com/id/1031592516/es/foto/gato-maine-coon-sobre-fondo-blanco.jpg?s=612x612&w=is&k=20&c=6WgZI0RhJIToc38Wfu4sTQqWraiLWmredhkmQaUbwJI=);
+	background-position: center;
+	background-size: cover;
+}
+/* aplicando media queries */
+@media (min-width: 800px) and (max-width:1200px){
+	body{
+		background-color: red;
+	}
+	h1{
+		text-align: right;
+	}
+	a{
+		color: #fff;
+		font-size: 50px;
+		padding: 20px;
+	}
+}
+
+@media (max-width:799px){
+	body{
+		background-image: url(https://media.istockphoto.com/id/1031592516/es/foto/gato-maine-coon-sobre-fondo-blanco.jpg?s=612x612&w=is&k=20&c=6WgZI0RhJIToc38Wfu4sTQqWraiLWmredhkmQaUbwJI=);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
